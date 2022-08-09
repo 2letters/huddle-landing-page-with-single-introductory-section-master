@@ -21,7 +21,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/flexbox-huddle-landing-page-with-a-single-introductory-section-zPmRC5qHyu)
-- Live Site URL: [Site](https://huddle-landing-page-with-single-introductory-section-n7zrfsdie.vercel.app/) 
+- Live Site URL: [Site](https://huddle-landing-page-with-single-introductory-s-git-b1615b-zogxo.vercel.app/) 
 
 ## My process
 
