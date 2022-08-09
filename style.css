@@ -13,23 +13,25 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     color: var(--white);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    width: 1312px;
-    height: 704px;
+.logo {
+    margin: 0 1085px 0 0;
+    width: 201px;
+    height: 49px;
 }
 
-.logo {
-    margin-left: -32px;
-    width: 264px;
-    height: 49px;
+main {
+    margin-top: 88px;
+    display: flex;
+    flex-direction: row;
+    width: 1287px;
+    height: 506px;
 }
 
 div {
@@ -46,7 +48,7 @@ div img {
 }
 
 section {
-    margin: 36px 0 156px 53px;
+    margin: 36px 0 0 53px;
 }
 
 h1 {
@@ -57,7 +59,7 @@ h1 {
 }
 
 p {
-    width: 520px;
+    margin-right: 5px;
     margin-top: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -66,7 +68,7 @@ p {
 }
 
 button {
-    margin-top: 23px;
+    margin-top: 24px;
     width: 200px;
     height: 56px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
@@ -87,14 +89,17 @@ button:hover {
 }
 
 footer {
-    margin-top: 21px;
+    margin: 21px 0 0 1102px;
     display: flex;
-    justify-content: end;
+    flex-direction: row;
 }
 
 picture {
-    width: 20px;
-    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
     padding: 10px;
     border: solid var(--white) 1px;
     border-radius: 100vmax;
@@ -102,50 +107,48 @@ picture {
     cursor: pointer;
 }
 
-picture:hover {
-    background: var(--soft-magenta);
-}
-
-footer img {
+picture img {
+    position: absolute;
     width: 20px;
     height: 20px;
 }
+
+picture:hover {
+    border-color: var(--soft-magenta);
+}
+
+.front:hover {
+    opacity: 0;
+}
+
 
 picture:nth-child(2) {
     margin: 0 16px 0 16px;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1430px) {
 
     body {
         height: auto;
         background-image: url("images/bg-mobile.svg");
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main {
-        margin: 64px 200px 100px 200px;
-        width: 651px;
-        height: 1455px;
+        background-size: contain;
     }
 
     .logo {
-        margin-left: -49px;
-        width: 340px;
-        height: 63px;
+        margin: 64px 356px 0 0;
+        width: 236px;
+        height: 83px;
     }
 
-    div {
+    main {
         margin-top: 121px;
         flex-direction: column;
         width: 603px;
-        height: 960px;
+        height: 1088px;
         text-align: center;
     }
 
-    div img {
+    main img {
         width: 603px;
         height: 429px;
     }
@@ -160,10 +163,8 @@ picture:nth-child(2) {
     }
 
     p {
-        width: 600px;
-        margin-top: 27px;
+        margin: 27px 0 0 0;
         font-size: 32px;
-
     }
 
     button {
@@ -176,21 +177,16 @@ picture:nth-child(2) {
     }
 
     footer {
-        margin-top: 257px;
-        display: flex;
-        justify-content: center;
+        margin: 129px 0 81px 0;
     }
 
     picture {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 12px;
-        height: 12px;
-        padding: 20px;
+        width: 26px;
+        height: 26px;
+        padding: 13px;
     }
 
-    footer img {
+    picture img {
         width: 28px;
         height: 28px;
     }
